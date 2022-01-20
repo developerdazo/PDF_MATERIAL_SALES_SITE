@@ -1,0 +1,11 @@
+{% extends "/admin/admin_base.html" %}
+{% block head %}
+
+{% endblock %}
+{% block body %}
+<h2>売上ペジ</h2>
+<h3>売上金額</h3><br>
+<div><h2>{{ total_sales_amount }}</h2></div>
+<h3>購入者情報</h3>{% for order in orders %}<li>{{ order.created_at }}
+    {{ order.name }}{{ order.email }}{{ order.card }}{% endfor %}
+{% endblock %}

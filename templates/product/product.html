@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block head %}
+<link rel="stylesheet" href="/static/productstyle.css">
+
+{% endblock %}
+{% block body %}
+<h2>{{ product.title }}</h2>
+<p>￥{{ product.price }}</p>
+<p>書いた人:{{ product.author }}</p>
+<p>説明：{{ product.description }}</p>
+<p>公開日時:{{ product.created_at }}</p>
+<p>更新日時：{{ product.updated_at }}</p>
+<a href="/order/{{ product.id }}" class="suru">購入ページへ</a>
+{% endblock %}

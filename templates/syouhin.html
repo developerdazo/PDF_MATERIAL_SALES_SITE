@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block head %}
+<link rel="stylesheet" href="/static/style.css">
+{% endblock %}
+{# bodyの中にTopページのデザインを作成していく #}
+{% block body %}
+<div class="syouhin">
+    <h1>商品一覧</h1>
+    <ul>
+        {# productsのリストから1つ1つのデータを表示してる #}
+        {% for product in products %}
+        <li class="syouhin"><a href="products/{{ product.id }}">{{ product.title }}</a>
+            (￥{{ product.price }})
+        </li>
+
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

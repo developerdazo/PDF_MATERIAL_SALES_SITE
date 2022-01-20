@@ -1,0 +1,24 @@
+div.toppage{
+flex: 1;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+p{
+text-align: center;
+max-width: 655px;
+}
+.index{
+ border-radius:25px;
+ color: white;
+ background: #6246EA;
+ width: 224px;
+ height: 56px;
+ font-weight:bold;
+ font-size: 24px;
+ text-align:center;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}

@@ -1,0 +1,23 @@
+.circlebutton{
+ border-radius:25px;
+ color: white;
+ background: #6246EA;
+ width: 224px;
+ height: 56px;
+ font-weight:bold;
+ font-size: 24px;
+ text-align:center;
+}
+.download{
+ border-radius:25px;
+ color: white;
+ background: #6246EA;
+ width: 224px;
+ height: 56px;
+ font-weight:bold;
+ font-size: 24px;
+ text-align:center;
+  display: flex;
+ align-items: center;
+ justify-content: center;
+}

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ product.title }}を削除しますか?</title>
+</head>
+<body>
+    <p>{{ product.title }}を削除しますか?<p>
+    <form action="/admin/pdf/delete/{{ product.id }}" method="post">
+        <button type="submit">削除する</button>
+    </form>
+</body>
+</html>

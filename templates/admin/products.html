@@ -1,0 +1,18 @@
+{% extends "admin/admin_base.html" %}
+{% block head %}
+<title>商品一覧ペジ</title>
+<link rel="stylesheet" href="/static/style.css">
+{% endblock %}
+
+{% block body %}
+    <h1>商品一覧</h1>
+    <ul>
+        {# productsのリストから1つ1つのデータを表示してる #}
+        {% for product in products %}
+        <li class="syouhin">{{ product.title }}</a>
+            (￥{{ product.price }})<a href="/admin/pdf/edit/{{ product.id }}" class="edit">編集</a><a href="/admin/pdf/delete/{{ product.id }}" class="delete">削除</a>
+        </li>
+
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,17 @@
+h2{
+font-size:48px;
+margin: 80px 0 48px 64px;
+font-weight: 800;
+}
+.suru{
+ border-radius:25px;
+ color: white;
+ background: #6246EA;
+ width: 224px;
+ height: 56px;
+ font-weight:bold;
+ font-size: 24px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ }

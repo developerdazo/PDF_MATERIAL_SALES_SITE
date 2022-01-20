@@ -1,0 +1,45 @@
+{% extends "admin/admin_base.html" %}
+{% block head %}
+<title>商品一覧ペジ</title>
+{% endblock %}
+
+{% block body %}
+
+<form action="/admin/pdf/upload" method="post" enctype="multipart/form-data">
+    <div>
+    <label>
+        ファイル:
+        <input type="file" name="file">
+    </label>
+    </div>
+    <div>
+    <label>
+        タイトル:
+        <input type="text" name="title">
+    </label>
+    </div>
+    <div>
+    <label>
+        値段:
+        <input type="number" name="price">
+    </label>
+    </div>
+    <div>
+    <label>
+        説明:
+        <textarea name="description">
+
+        </textarea>
+    </label>
+    </div>
+    <div>
+    <label>
+        書いた人:
+        <input type="text" name="author">
+    </label>
+    </div>
+    <div>
+        <button type="submit">送信</button>
+    </div>
+</form>
+{% endblock %}

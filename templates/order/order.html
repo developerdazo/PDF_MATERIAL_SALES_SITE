@@ -1,0 +1,19 @@
+
+
+{% extends "base.html" %}
+{% block head %}
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/order.css">
+{% endblock %}
+{% block body %}
+
+<h2>{{ product.title }}</h2>
+<form method="post">
+    <p>名前 <input type="text" name="name"></p>
+    <p>メールアドレス <input type="text" name="email"></p>
+    <p>クレジットカード番号 <input type="number" name="card"></p>
+    <button class="circlebutton">購入する</button>
+
+</form>
+{% endblock %}
